@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Student Database
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                Student Database Project</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="homepage.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="insert.php" target="_top">Add</a>
+                    </li>
+                    <li>
+                        <a href="select.php" target="_top">Display</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">AboutUs</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img class="mySlides" src="header1.jpg" width=90% height="300px" alt="logo">
+    <img class="mySlides" src="header2.jpg" width=90% height="300px" alt="logo">
+    <img class="mySlides" src="header3.jpg" width=90% height="300px" alt="logo">
+
+    <section class="main">
+        <article class="sample">
+            <h3>Sample1</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Autem deleniti officia perferendis eius, exercitationem iste quae ad tenetur, libero
+                expedita repellendus suscipit praesentium aspernatur. Accusantium deleniti
+                aut explicabo vel odit.
+            </p>
+        </article>
+        <article class="sample">
+
+            <h3>Sample2</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Autem deleniti officia perferendis eius, exercitationem iste quae ad tenetur, libero
+                expedita repellendus suscipit praesentium aspernatur. Accusantium deleniti
+                aut explicabo vel odit.
+            </p>
+        </article>
+        <article class="sample">
+
+            <h3>Sample3</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Autem deleniti officia perferendis eius, exercitationem iste quae ad tenetur, libero
+                expedita repellendus suscipit praesentium aspernatur. Accusantium deleniti
+                aut explicabo vel odit.
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Manjunath sample projects, &copy;2018</p>
+    </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+
+    </script>
+
+</body>
+
+</html>

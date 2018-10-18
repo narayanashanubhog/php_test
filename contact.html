@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>contactUs</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>
+                Student Database Project</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="homepage.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="insert.php" target="_top">Add</a>
+                    </li>
+                    <li>
+                        <a href="select.php" target="_top">Display</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">AboutUs</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img class="mySlides" src="header1.jpg" width=90% height="300px" alt="logo">
+    <img class="mySlides" src="header2.jpg" width=90% height="300px" alt="logo">
+    <img class="mySlides" src="header3.jpg" width=90% height="300px" alt="logo">
+    <br>
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d486.01300136009706!2d77.5356658!3d12.9651958!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1539836868625"
+            width="100%" style="margin-top: 10px; margin-bottom: 10px" height="450" frameborder="0" style="border:0"
+            allowfullscreen></iframe>
+    </div>
+    <br>
+    <address class="address">
+        No 39/35 <br>
+        1st E cross <br>
+        REMCO Layout <br>
+        Vijayanagar <br>
+        Bengaluru - 560104
+    </address>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+
+    </script>
+    <footer>
+        <p>Manjunath sample projects, &copy;2018</p>
+    </footer>
+</body>
+
+</html>
